@@ -271,7 +271,7 @@
                     <div class="modal-body">
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <div class="input-group mb-4">
 
@@ -280,11 +280,19 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <div class="input-group mb-4">
 
                                         <input type="text" name="cpf_search" class="form-control" placeholder="CPF" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <div class="input-group mb-4">
+                                        <input type="text" name="rg_search" class="form-control" placeholder="RG" />
                                     </div>
                                 </div>
                             </div>

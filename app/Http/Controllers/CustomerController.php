@@ -137,6 +137,11 @@ class CustomerController extends Controller
             $query->where('cpf','LIKE',"%$request->cpf_search%");
         }
 
+        if($request->has('rg_search'))
+        {
+            $query->where('rg','LIKE',"%$request->rg_search%");
+        }
+
         $customers = $query->get();
 
         return view('dashboard',compact('customers'));
