@@ -30,13 +30,9 @@ class Customer extends Model
         // faz a verificacao do cpf
 
         $verificacao = substr($customer->cpf, 0, 1);
-        if($verificacao >= 0 && $verificacao <= 6){
-            // ate 1950 ate 2000
+        if($verificacao <= 6){
                 $status_cliente = true;
-        }else{
-            $status_cliente = false;
         }
-
         $customer->status_cliente = $status_cliente;
         $customer->save();
         });
